@@ -1,8 +1,6 @@
 # Computer-Language-Comparison
 Comparison of Computer Languages
 
-# Comparison of Computer Languages
-
 ## Comparison of Keywords
 
 | Lang           | C/C++      | Java    | Python       | Ruby              | javaScript | go      | swift   | scala   | php             | julia              |
