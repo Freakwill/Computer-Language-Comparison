@@ -1,5 +1,11 @@
 # Comparison of Computer Languages
 
+Comparison of Computer Languages
+
+* /: does not have such keyword or function
+* -: same with Python
+
+
 ## Comparison of Keywords
 
 | Lang           | C/C++      | Java    | Python       | Ruby              | javaScript | go      | swift   | scala   | php             | julia              |
