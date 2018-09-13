@@ -1,8 +1,9 @@
 # Comparison of Computer Languages
 
-Comparison of Computer Languages
+
 
 * /: does not have such keyword or function
+
 * -: same with Python
 
 
@@ -27,14 +28,31 @@ Comparison of Computer Languages
 | Languages   | C/C++ | Java    | Python            | Ruby                    | javaScript    | go   | swift | scala | php  | julia         |
 | ----------- | ----- | ------- | ----------------- | ----------------------- | ------------- | ---- | ----- | ----- | ---- | ------------- |
 | Define      | {}    | {}      | []                | [],Array.new,Array[]    | [],Array()    | var  | var   |       |      | [],Array{}    |
-| index       | -     | -       | -                 | -/.at                   | -             | -    | -     | -     | -    | -/getindex    |
+| referance   | -     | -       | -                 | -/.at                   | -             | -    | -     | -     | -    | -/getindex    |
 | sum         | -     | -       | sum               | .sum                    | -             | -    | -     | -     | -    | -             |
 | product     |       |         |                   |                         |               |      |       |       |      | prod          |
 | minimum/max |       |         | min/max           | .min/.max               | -             | -    | -     | -     | -    | -             |
 | sorting     |       |         | sorted/.sort      | .sort                   | .sort         |      |       |       |      | sort          |
-| deleting    |       |         | del/.remove/.pop  | .delete/.pop/.delete_at | .pop          |      |       |       |      |               |
-| concatenate |       | extends | +/.append/.extend | +/.push/.concat         | .push/.concat |      |       |       |      |               |
-| mapping     |       |         | map               | .map                    | .map          |      |       |       |      | map           |
+| deleting    |       |         | del/.remove/.pop  | .delete/.pop/.delete_at | .pop/.shift   |      |       |       |      |               |
+| concatenate |       | extends | +/.append/.extend | +/.push/.concat/<<      | .push/.concat |      |       |       |      |               |
+| mapping     |       |         | map               | .map/.each              | .map          |      |       |       |      | map           |
 | finding     |       |         | index             | .index/.values_at       |               |      |       |       |      | cat/vcat/hcat |
 | containing  |       |         | in                | .include?               |               |      |       |       |      | in            |
+
+
+
+## About Strings
+
+| Languages   | C/C++ | Java    | Python           | Ruby                    | javaScript    | Swift | Julia |
+| ----------- | ----- | ------- | ---------------- | ----------------------- | ------------- | ---- | ----- |
+| Define      | "" | "" | ""/''/""""""     | -/%q/ `<<~DOC ... DOC` | - | "" | - |
+| referance  | -     | -       | []               | -                   | -             | - | - |
+| mutable | Yes  | Yes    | No |Yes|No|  | No |
+| deleting    |       |         | .strip | .chomp |    |  |  |
+| concatenate |       |  | +                | +/.concat/<< | - |  | */string |
+| mapping     |       |         | map              | .each_byte           |                |  |  |
+| finding     |       |         | index            | .index       | .search |  | findnext |
+| containing  |       |         | in               | .include?               | - |  | occursin |
+| split | | | .split | - | - |  |  |
+| join | | | .join | list.join(str) | list.join(str) |  | join |
 
