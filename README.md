@@ -1,11 +1,10 @@
 # Comparison of Computer Languages
 
-
+[Wiki](https://en.wikipedia.org/wiki/Comparison_of_programming_languages_(syntax))
 
 * /: does not have such keyword or function
-
 * -: same with Python
-
+* a/b: both a and b
 
 ## Comparison of Keywords
 
@@ -25,34 +24,45 @@
 
 ## Operating Arrays
 
-| Languages   | C/C++ | Java    | Python            | Ruby                    | javaScript    | go   | swift | scala | php  | julia         |
-| ----------- | ----- | ------- | ----------------- | ----------------------- | ------------- | ---- | ----- | ----- | ---- | ------------- |
-| Define      | {}    | {}      | []                | [],Array.new,Array[]    | [],Array()    | var  | var   |       |      | [],Array{}    |
-| referance   | -     | -       | -                 | -/.at                   | -             | -    | -     | -     | -    | -/getindex    |
-| sum         | -     | -       | sum               | .sum                    | -             | -    | -     | -     | -    | -             |
-| product     |       |         |                   |                         |               |      |       |       |      | prod          |
-| minimum/max |       |         | min/max           | .min/.max               | -             | -    | -     | -     | -    | -             |
-| sorting     |       |         | sorted/.sort      | .sort                   | .sort         |      |       |       |      | sort          |
-| deleting    |       |         | del/.remove/.pop  | .delete/.pop/.delete_at | .pop/.shift   |      |       |       |      |               |
-| concatenate |       | extends | +/.append/.extend | +/.push/.concat/<<      | .push/.concat |      |       |       |      |               |
-| mapping     |       |         | map               | .map/.each              | .map          |      |       |       |      | map           |
-| finding     |       |         | index             | .index/.values_at       |               |      |       |       |      | cat/vcat/hcat |
-| containing  |       |         | in                | .include?               |               |      |       |       |      | in            |
+| Languages   | C/C++ | Java    | Python            | Ruby                    | javaScript    | go   | swift         | scala | php  | julia         |
+| ----------- | ----- | ------- | ----------------- | ----------------------- | ------------- | ---- | ------------- | ----- | ---- | ------------- |
+| Define      | {}    | {}      | []                | [],Array.new,Array[]    | [],Array()    | var  | var           |       |      | [],Array{}    |
+| referance   | -     | -       | -                 | -/.at                   | -             | -    | -             | -     | -    | -/getindex    |
+| sum         | -     | -       | sum               | .sum                    | -             | -    | -             | -     | -    | -             |
+| product     |       |         |                   |                         |               |      |               |       |      | prod          |
+| minimum/max |       |         | min/max           | .min/.max               | -             | -    | -             | -     | -    | -             |
+| sorting     |       |         | sorted/.sort      | .sort                   | .sort         |      |               |       |      | sort          |
+| deleting    |       |         | del/.remove/.pop  | .delete/.pop/.delete_at | .pop/.shift   |      | .remove(,at:) |       |      |               |
+| concatenate |       | extends | +/.append/.extend | +/.push/.concat/<<      | .push/.concat |      |               |       |      |               |
+| mapping     |       |         | map               | .map/.each              | .map          |      |               |       |      | map           |
+| finding     |       |         | index             | .index/.values_at       |               |      |               |       |      | cat/vcat/hcat |
+| containing  |       |         | in                | .include?               |               |      |               |       |      | in            |
+| insert      |       |         | .insert           | -                       |               |      | .insert(,at:) |       |      |               |
 
 
 
 ## About Strings
 
-| Languages   | C/C++ | Java    | Python           | Ruby                    | javaScript    | Swift | Julia |
-| ----------- | ----- | ------- | ---------------- | ----------------------- | ------------- | ---- | ----- |
-| Define      | "" | "" | ""/''/""""""     | -/%q/ `<<~DOC ... DOC` | - | "" | - |
-| referance  | -     | -       | []               | -                   | -             | - | - |
-| mutable | Yes  | Yes    | No |Yes|No|  | No |
-| deleting    |       |         | .strip | .chomp |    |  |  |
-| concatenate |       |  | +                | +/.concat/<< | - |  | */string |
-| mapping     |       |         | map              | .each_byte           |                |  |  |
-| finding     |       |         | index            | .index       | .search |  | findnext |
-| containing  |       |         | in               | .include?               | - |  | occursin |
-| split | | | .split | - | - |  |  |
-| join | | | .join | list.join(str) | list.join(str) |  | join |
+| Languages   | C/C++ | Java    | Python           | Ruby                    | javaScript    | Swift | Julia | Lua |
+| ----------- | ----- | ------- | ---------------- | ----------------------- | ------------- | ---- | ----- | ----------- |
+| Define      | "" | "" | ""/''/""""""/str() | -/%q/ `<<~DOC ... DOC`/String.new | -/String.new() | -/String() | - | ""/''/[[]] |
+| referance  | -     | -       | []               | -                   | -             | [Index] | - | string.sub |
+| mutable | Yes  | Yes    | No |Yes|No| Yes | No | No |
+| deleting    |       |         | .strip | .chomp |    |  |  |  |
+| concatenate |       |  | +                | +/.concat/<< | - | +/.append | */string | .. |
+| mapping     |       |         | map              | .each_byte           |                |  |  |  |
+| finding     |       |         | index            | .index       | .search |  | findnext | string.find |
+| containing  |       |         | in               | .include?               | - |  | occursin |  |
+| split | | | .split | - | - |  |  |  |
+| join | | | .join | list.join(str) | list.join(str) |  | join |  |
+| replace | | | .replace | s[...]=.../.sub/.gsub | - | | replace | string.gsub |
+
+
+
+## Package Manager
+
+| Python           | Ruby    | C/C++    | javaScript | Lua      | Julia | Haskell         | R                  | Java  | Swift |
+| ---------------- | ------- | -------- | ---------- | -------- | ----- | --------------- | ------------------ | ----- | ----- |
+| pip/conda        | gem     | conan    | npm        | luarocks | Pkg   | Cabal/stock/nix | install.packages() | maven | spm   |
+| requirements.txt | GemFile | MakeFile |            |          |       |                 |                    |       |       |
 
