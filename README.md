@@ -21,7 +21,7 @@
 | if-else        | if-else    | if-else | if-elif-else | if-elsif-else-end | if-else    | if-else | if-else | if-else | if-elseif-else  | if-elseif-else-end |
 | library/module | `#include` | import  | import       | require/include   | import     | import  | import  | import  | include/require | import/using       |
 | inheritance    | :          | extends | /           | <                 | extends    | /      | :       | extends | extends         |                    |
-| Weird Degree   | 3          | 4       | 1            | 5                 | 3          | 5       | 2       | 3       | 5               | 4                  |
+| Weird Degree   | 3          | 4       | 1            | 4                 | 3          | 5       | 2       | 3       | 5               | 4                  |
 
 
 
