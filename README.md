@@ -6,6 +6,9 @@
 * -: same with Python
 * a/b: both a and b
 
+## Also See
+[Hyperpolyglot](http://hyperpolyglot.org/)
+
 ## Comparison of Keywords
 
 | Lang           | C/C++      | Java    | Python       | Ruby              | javaScript | go      | swift   | scala   | php             | julia              |
